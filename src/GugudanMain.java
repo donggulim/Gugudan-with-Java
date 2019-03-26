@@ -1,12 +1,33 @@
+import java.util.Scanner;
 
 public class GugudanMain {
 
 	public static void main(String[] args) {
+
+		Scanner scanner=new Scanner(System.in);
+
+		String inputValue=scanner.nextLine();
 		
-		for(int i=2;i<10;i++) {
-		int[] result=Gugudan.calculate(i);
-		Gugudan.print(result);
+		String[] splitedValue=inputValue.split(",");
+		
+		if(inputValue.contains(",")) {
+			
+			int first = Integer.parseInt(splitedValue[0]);
+			int second= Integer.parseInt(splitedValue[1]);
+		}
+		else {
+			int first = Integer.parseInt(splitedValue[0]);
 		}
 		
+			int[] result=Gugudan.calculate(first);
+			
+			
+		}	
 }
-}
+
+	
+	
+
+
+
+
