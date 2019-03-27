@@ -11,10 +11,11 @@ public class GugudanMain {
 			int first  = Integer.parseInt(splitedValue[0]);
 			int second = Integer.parseInt(splitedValue[1]);
 			
-			int[] result=Gugudan.calculate(first);
+			for(int i=2 ; i<=first;i++) {
+			int[] result=Gugudan.calculate(i,second);
 			Gugudan.print(result);	
-			
-			
+			}
+		
 		}
 		else {
 			int first = Integer.parseInt(splitedValue[0]);
